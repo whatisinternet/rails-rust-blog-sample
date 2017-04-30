@@ -20,3 +20,6 @@
 target/
 **/*.rs.bk
 Cargo.lock
+*.dylib
+**/*.dylib
+mkmf.log

@@ -1,0 +1,12 @@
+[package]
+name = "rust-blog"
+version = "0.1.0"
+authors = ["Josh"]
+
+[package.metadata.thermite]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+ruru = "0.9.0"

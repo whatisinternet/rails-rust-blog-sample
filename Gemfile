@@ -30,6 +30,8 @@ source 'https://rubygems.org' do
     gem 'shoulda-matchers'
     gem 'faker'
     gem 'database_cleaner'
+    gem 'json_matchers'
+    gem 'rspec-snapshot'
   end
 
   group :production do

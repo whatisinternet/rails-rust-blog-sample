@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "items": {
+        "id": "/items",
+        "properties": {
+            "def": {
+                "id": "/items/properties/def",
+                "type": "string"
+            },
+            "defscore": {
+                "id": "/items/properties/defscore",
+                "type": "string"
+            },
+            "description": {
+                "id": "/items/properties/description",
+                "type": "string"
+            },
+            "down": {
+                "id": "/items/properties/down",
+                "type": "null"
+            },
+            "gameid": {
+                "id": "/items/properties/gameid",
+                "type": "string"
+            },
+            "min": {
+                "id": "/items/properties/min",
+                "type": "null"
+            },
+            "off": {
+                "id": "/items/properties/off",
+                "type": "string"
+            },
+            "offscore": {
+                "id": "/items/properties/offscore",
+                "type": "string"
+            },
+            "qtr": {
+                "id": "/items/properties/qtr",
+                "type": "string"
+            },
+            "season": {
+                "id": "/items/properties/season",
+                "type": "string"
+            },
+            "sec": {
+                "id": "/items/properties/sec",
+                "type": "string"
+            },
+            "togo": {
+                "id": "/items/properties/togo",
+                "type": "null"
+            },
+            "ydline": {
+                "id": "/items/properties/ydline",
+                "type": "null"
+            }
+        },
+        "type": "object"
+    },
+    "minItems": 1,
+    "type": "array"
+}

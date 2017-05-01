@@ -2,17 +2,21 @@ require 'csv'
 
 class SampleController < ApplicationController
   def rust
-    csv_path = Rails.root.join('vendor', 'bench.csv')
     rusty_csv = RustyCSV.new.csv_to_json(csv_path.to_s)
-    render plain: rusty_csv
+    render json: rusty_csv
   end
 
   def ruby
-    csv_path = Rails.root.join('vendor', 'bench.csv')
-    output = []
+    ruby_csv = []
     CSV.foreach(csv_path.to_s, headers: true) do |thinger|
-      output << thinger.to_h
+      ruby_csv << thinger.to_h
     end
-    render json: output
+    render json: ruby_csv
+  end
+
+private
+
+  def csv_path
+    Rails.root.join('vendor', 'bench.csv')
   end
 end
